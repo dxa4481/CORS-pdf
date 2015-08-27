@@ -1,0 +1,18 @@
+<html>
+<body>
+<span id="curserReadout">Cursor at: 0, 0</span>
+<object id="testObject" height="100%" width="100%" type="application/pdf" data="https://www.whitehouse.gov/sites/default/files/omb/egov/digital-government/digital-government-strategy.pdf">
+</object>
+</body>
+<script>
+var cursorX;
+var cursorY;
+document.onmousemove = function(e){
+    cursorX = e.pageX;
+    cursorY = e.pageY;
+    document.getElementById("curserReadout").innerHTML = "Cursor at: " + cursorX + ", " + cursorY;
+}
+</script>
+
+
+</html>
